@@ -2,12 +2,12 @@ package com.piyush.programs;
 
 import java.util.HashMap;
 
-/**
- * Created by piyushbha on 3/1/2019.
- */
+
 public class Anagram {
     public static void main(String[] args){
-        boolean val=validAnagram("abc","cab");
+
+        boolean val=validAnagram("egg","gge");
+        System.out.println(val);
     }
     static boolean validAnagram(String s,String t) {
         if (s.length() != t.length())

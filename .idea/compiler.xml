@@ -9,7 +9,7 @@
         <module name="Programs" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Programs" target="1.5" />
     </bytecodeTargetLevel>
   </component>
