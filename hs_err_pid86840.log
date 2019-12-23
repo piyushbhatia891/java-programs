@@ -1,0 +1,132 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=86840, tid=0x00000000000156ec
+#
+# JRE version:  (8.0_131-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000004ba4000):  JavaThread "Unknown thread" [_thread_in_vm, id=87788, stack(0x0000000004920000,0x0000000004a20000)]
+
+Stack: [0x0000000004920000,0x0000000004a20000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000004ba4000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=87788, stack(0x0000000004920000,0x0000000004a20000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6099b0000 - 0x00007ff6099e7000 	C:\Program Files\Java\jdk1.8.0_131\bin\java.exe
+0x00007ffd23c50000 - 0x00007ffd23e30000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd23070000 - 0x00007ffd2311e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd20420000 - 0x00007ffd20686000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x000000006ee10000 - 0x000000006eea5000 	C:\WINDOWS\System32\SYSFER.DLL
+0x00007ffd23290000 - 0x00007ffd23331000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd23340000 - 0x00007ffd233dd000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd21830000 - 0x00007ffd2188b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd212c0000 - 0x00007ffd213df000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd22e90000 - 0x00007ffd2301f000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd20050000 - 0x00007ffd20070000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd21290000 - 0x00007ffd212b8000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd20f80000 - 0x00007ffd21113000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd20690000 - 0x00007ffd2072b000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd20150000 - 0x00007ffd20244000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd105a0000 - 0x00007ffd10809000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.1268_none_0f8e5d125a67714c\COMCTL32.dll
+0x00007ffd23450000 - 0x00007ffd23756000 	C:\WINDOWS\System32\combase.dll
+0x00007ffd200d0000 - 0x00007ffd20148000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffd23040000 - 0x00007ffd2306d000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffd1f360000 - 0x00007ffd1f4d0000 	C:\Program Files\Avecto\Privilege Guard Client\PGHook.dll
+0x00007ffd1f9f0000 - 0x00007ffd1fa07000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x00007ffd1f250000 - 0x00007ffd1f283000 	C:\WINDOWS\system32\rsaenh.dll
+0x00007ffd1fb00000 - 0x00007ffd1fb25000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00007ffd1fa10000 - 0x00007ffd1fa1b000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x00007ffd21a50000 - 0x00007ffd22e89000 	C:\WINDOWS\System32\shell32.dll
+0x00007ffd20730000 - 0x00007ffd2077a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffd231e0000 - 0x00007ffd23286000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffd20830000 - 0x00007ffd20f77000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffd218a0000 - 0x00007ffd218f1000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffd20010000 - 0x00007ffd20021000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffd1ffc0000 - 0x00007ffd2000c000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffd1ffa0000 - 0x00007ffd1ffbb000 	C:\WINDOWS\System32\profapi.dll
+0x000000006c3e0000 - 0x000000006c4b2000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\msvcr100.dll
+0x000000006bb40000 - 0x000000006c3dc000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\server\jvm.dll
+0x00007ffd23020000 - 0x00007ffd23028000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd1e960000 - 0x00007ffd1e969000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd233e0000 - 0x00007ffd2344c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd1dc50000 - 0x00007ffd1dc73000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd0dae0000 - 0x00007ffd0daea000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd1dbb0000 - 0x00007ffd1dbda000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x000000006ba70000 - 0x000000006ba7f000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\verify.dll
+0x000000006ba40000 - 0x000000006ba69000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\java.dll
+0x000000006cce0000 - 0x000000006cd03000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\instrument.dll
+0x000000006ba00000 - 0x000000006ba16000 	C:\Program Files\Java\jdk1.8.0_131\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2017.1.1\lib\idea_rt.jar=50228:C:\Program Files\JetBrains\IntelliJ IDEA 2017.1.1\bin -Dfile.encoding=UTF-8 
+java_command: com.piyush.programs.array.MaxProductArray
+java_class_path (initial): C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;D:\testProgram\Programs\target\classes;C:\Program Files\JetBrains\IntelliJ IDEA 2017.1.1\lib\idea_rt.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
+USERNAME=piyushbha
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 16299 (10.0.16299.1146)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16414080k(502536k free), swap 48234236k(9596k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.131-b11) for windows-amd64 JRE (1.8.0_131-b11), built on Mar 15 2017 01:23:53 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Nov 26 11:48:03 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
